@@ -1,0 +1,140 @@
+body {
+    background: #f8f8f9;
+}
+
+
+.outer-circle {
+ border: 7px solid #ffffff;
+
+  
+ display: block;
+ position: relative;
+ overflow: hidden;
+ width: 800px;
+ height: 800px;
+ border-radius: 100%;
+ background-image: repeating-conic-gradient(
+     #002855 0deg 72deg,
+     #ffffff 72deg 73deg, 
+     #7ba5de 73deg 145deg,
+     #ffffff 145deg 146deg
+
+ );
+}
+
+body .outer-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.inner-circle {
+    border: 7px solid #ffffff;
+   
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    width: 750px;
+    height: 750px;
+    border-radius: 100%;
+    background-image: repeating-conic-gradient(
+        #002248 0deg 72deg,
+        #d9d9d963 72deg 73deg, 
+        #698dbd 73deg 145deg,
+        #d9d9d963 145deg 146deg,
+         
+        
+    );
+}
+
+.inner-circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.center-circle {
+    background: #f8f8f9;
+    display: block;
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 100%
+}
+
+.triangle {
+    border-left: 220px solid transparent;
+    border-right: 220px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-top: 440px solid #194f90;
+    display: inline-block;
+    transform: rotate(.125turn);
+    position: absolute;
+    left: 310px;
+    top: 50px;
+    overflow: hidden;
+    border-block-end: solid #be1332;
+}
+
+.triangle:hover {
+    border-left: 220px solid transparent;
+    border-right: 220px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-top: 440px solid #be1332;
+    display: inline-block;
+    transform: rotate(.125turn);
+    position: absolute;
+    left: 310px;
+    top: 50px;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+
+.triangle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.triangle2 {
+    border-left: 200px solid transparent;
+    border-right: 200px solid transparent;
+    border-bottom: 20px solid transparent;
+    border-top: 400px solid #194f90;
+    display: inline-block;
+    transform: rotate(.125turn);
+    position: absolute;
+    left: 330px;
+    top: 70px;
+    overflow: hidden;
+}
+
+/* .arc {
+    overflow: hidden;
+    position: absolute;
+    /* make sure top & left values are - the width of the border */
+    /* the bottom right corner is the centre of the parent circle */
+    /*top: -7px;
+    right: 50%;
+    bottom: 50%;
+    left: -7px;
+    /* the transform origin is the bottom right corner */
+    /*transform-origin: 100% 100%;
+    /* rotate by any angle */
+    /* the skew angle is 90deg - the angle you want for the arc */
+    /*transform: rotate(105deg) skewX(30deg);
+  }
+  
+  .arc:before {
+    box-sizing: border-box;
+    display: block;
+    border: solid 1em navy;
+    width: 200%;
+    height: 200%;
+    border-radius: 50%;
+    transform: skewX(-30deg);
+    content: '';
+  } */
